@@ -91,20 +91,18 @@
 	};
 
 	fragment@2 {
-		target-path = "/ahb/apb";
+		target = <&pioA>;
 		__overlay__ {
-			pinctrl@fc038000 {
-				pinctrl_qt1070_irq: pinctrl_qt1070_irq {
-					pinmux = <PIN_PB8__GPIO>;
-					bias-pull-up;
-					input-debounce = <1>;
-				};
+			pinctrl_qt1070_irq: pinctrl_qt1070_irq {
+				pinmux = <PIN_PB8__GPIO>;
+				bias-pull-up;
+				input-debounce = <1>;
+			};
 
-				pinctrl_mxt_irq: pinctrl_mxt_irq {
-					pinmux = <PIN_PB7__GPIO>;
-					bias-pull-up;
-					input-debounce = <1>;
-				};
+			pinctrl_mxt_irq: pinctrl_mxt_irq {
+				pinmux = <PIN_PB7__GPIO>;
+				bias-pull-up;
+				input-debounce = <1>;
 			};
 		};
 	};
