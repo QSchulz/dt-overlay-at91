@@ -75,13 +75,6 @@
 	};
 
 	fragment@1 {
-		target = <&spi0>;
-		__overlay__ {
-			status = "disabled";
-		};
-	};
-
-	fragment@2 {
 		target = <&isi>;
 		__overlay__ {
 			status = "okay";
@@ -97,7 +90,7 @@
 		};
 	};
 
-	fragment@3 {
+	fragment@2 {
 		target = <&i2c0>;
 		__overlay__ {
 			ov2640: camera@0x30 {
